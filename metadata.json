@@ -1,0 +1,16 @@
+{
+  "uuid": "spacebar@ben-j.documents.dev",
+  "name": "SpaceBar",
+  "description": "Une barre supérieure flottante et transparente pour GNOME Shell 45+",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52"
+  ],
+  "url": "https://github.com/ben-j/gnome-spacebar"
+}

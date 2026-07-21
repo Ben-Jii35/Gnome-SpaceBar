@@ -1,0 +1,53 @@
+/* SpaceBar - CSS Stylesheet for GNOME Shell 45+ */
+
+/* 
+   Le conteneur principal du panel (panelBox) reçoit un padding supérieur et latéral 
+   pour décoller la barre des bords de l'écran, créant l'effet "flottant".
+*/
+.spacebar-panel-box {
+    padding: 10px 16px 0 16px !important;
+    background-color: transparent !important;
+}
+
+/* 
+   Le style du panel lui-même avec un effet de verre dépoli (glassmorphism) 
+   et des coins très arrondis.
+*/
+#panel.spacebar-panel {
+    background-color: rgba(24, 24, 30, 0.72) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 99px !important; /* Forme de pilule */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+    height: 40px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Ajustement des boutons internes pour qu'ils respectent les bords arrondis */
+.spacebar-panel .panel-button {
+    border-radius: 99px !important;
+    margin: 3px 4px !important;
+    padding: 0 14px !important;
+    color: #e0e0e0 !important;
+    font-weight: 500 !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+/* Effets au survol des boutons de la top bar */
+.spacebar-panel .panel-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+}
+
+/* Effets quand un menu est ouvert (état checked/active) */
+.spacebar-panel .panel-button:active,
+.spacebar-panel .panel-button:checked,
+.spacebar-panel .panel-button:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* Coins arrondis pour les indicateurs de notification / statut */
+.spacebar-panel .system-status-icon {
+    icon-size: 16px !important;
+}
