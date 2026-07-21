@@ -4,6 +4,9 @@
 
 **SpaceBar** est une extension pour GNOME Shell qui permet d'améliorer le design de la barre supérieure (topBar) en lui donnant une apparence flottante, transparente et aux bords arrondis (*glassmorphism*).
 
+
+![Aperçu de SpaceBar](images/preview.png)
+
 ---
 
 ## 🛠️ Installation
